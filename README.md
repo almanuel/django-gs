@@ -27,13 +27,28 @@ Taking notes.
 
 ### Model CRUD operations on admin
 Suppose a `polls` app and a `Question` model, on `polls/admin.py` file add: 
-```
+```python
 from .models import Question
 admin.site.register(Question)
 ```
 That's it.
 
 ### Models API
-- Queries, get, filters.
+- Queries, get, filters.`
+## Part 3
+- New views on new urls.
+- Templates. [Read more here](https://docs.djangoproject.com/en/1.11/topics/templates/). 
+- Raising 404 error
+  - `raise django.http.Http404("Some message")`
+  - Shortcuts: `get_object_or_404()` and `get_list_or_404()`
+- Removing hardcoded URLs in templates, e.g:
+```html
+<a href="{% url 'detail' question.id %}">{{ question.question_text }}</a>
+```
+- Define app namespaces with `app_name` in `urls.py`. 
+
+
+
+
 
 
