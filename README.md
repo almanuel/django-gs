@@ -47,7 +47,11 @@ That's it.
 ```
 - Define app namespaces with `app_name` in `urls.py`. 
 
-
+## Part 4
+- Simple forms
+- Generic Views
+  - `ListView` and `DetailView` classes
+  - [Documentation](https://docs.djangoproject.com/en/1.11/topics/class-based-views/)
 
 
 
